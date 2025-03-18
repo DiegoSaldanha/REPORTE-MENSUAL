@@ -9,6 +9,9 @@ data = pd.read_csv(archivo_csv)
 #ordenar los datos por nombre
 data_ordenada = data.sort_values(by='Nombre1')
 
+#Nuevas reglas de tratamiento de fuentes
+#Nuevas repositorios
+
 # Exportar a Excel
 archivo_excel = 'clientes_ordenados.xlsx'
 data_ordenada.to_excel(archivo_excel, index=False)
