@@ -9,6 +9,10 @@ data = pd.read_csv(archivo_csv)
 #ordenar los datos por nombre
 data_ordenada = data.sort_values(by='Nombre1')
 
+
+#nuevas reglas por directorio telefonico
+
+
 # Exportar a Excel
 archivo_excel = 'clientes_ordenados.xlsx'
 data_ordenada.to_excel(archivo_excel, index=False)
